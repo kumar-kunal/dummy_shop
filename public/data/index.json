@@ -1,0 +1,256 @@
+{
+   "product_comparison": [
+      { "field": "id", "value1": 6, "value2": 7 },
+      {
+         "field": "lender_id",
+         "value1": "1",
+         "value2": "2"
+      },
+      {
+         "field": "name",
+         "value1": "prod1",
+         "value2": "prod2"
+      },
+      {
+         "field": "description",
+         "value1": "Test",
+         "value2": "Test2"
+      },
+      {
+         "field": "image",
+         "value1": "http://180.151.69.138:2112/uploads/image-1592964501245-564493309.png",
+         "value2": "http://180.151.69.138:2112/uploads/image-1592964501245-564493309.png"
+      },
+      { "field": "status", "value1": 1, "value2": 2 },
+      {
+         "field": "mortgage_type",
+         "value1": "FIXED",
+         "value2": "FIXED"
+      },
+      {
+         "field": "base_rate",
+         "value1": 25,
+         "value2": 35
+      },
+      {
+         "field": "high_ratio_mortgage",
+         "value1": 1,
+         "value2": 11
+      },
+      {
+         "field": "open_mortgage",
+         "value1": 1,
+         "value2": 11
+      },
+      {
+         "field": "amortization_yrs_max",
+         "value1": 15,
+         "value2": 105
+      },
+      {
+         "field": "amortization_yrs_min",
+         "value1": 8,
+         "value2": 80
+      },
+      {
+         "field": "mortgage_term_yrs_min",
+         "value1": 8,
+         "value2": 18
+      },
+      {
+         "field": "mortgage_term_yrs_max",
+         "value1": 15,
+         "value2": 5
+      },
+      {
+         "field": "lender_fee",
+         "value1": 1000,
+         "value2": 100
+      }
+   ],
+   "products": {
+      "images": [
+         "http://180.151.69.138:2112/uploads/image-1592964501245-564493309.png",
+         "http://180.151.69.138:2112/uploads/image-1592964501245-564493309.png"
+      ],
+      "details": [
+         {
+            "fieldName": "Lender Name",
+            "values": [{ "title": "Scotiabank" }, { "title": "CIBC" }]
+         },
+         {
+            "fieldName": "Mortgage Amount",
+            "values": [
+               { "title": "550000", "is_currecy": true },
+               { "title": "550000", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Interest Rate",
+            "highlight": true,
+            "values": [
+               { "title": "2.29%", "highlight": true },
+               { "title": "1.99%", "highlight": true }
+            ]
+         },
+         {
+            "fieldName": "APR",
+            "highlight": true,
+            "values": [
+               { "title": "2.52%", "highlight": true },
+               { "title": "2.22%", "highlight": true }
+            ]
+         },
+         {
+            "fieldName": "Monthly Mortgage Payment",
+            "highlight": true,
+            "values": [
+               { "title": "2485", "highlight": true, "is_currecy": true },
+               { "title": "2402", "highlight": true, "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Term",
+            "values": [{ "title": "5 years" }, { "title": "5 years" }]
+         },
+         {
+            "fieldName": "Product Type (Fixed, Variable, ARM)",
+            "values": [{ "title": "Fixed" }, { "title": "Fixed" }]
+         },
+         {
+            "fieldName": "Amortization",
+            "values": [{ "title": "25 years" }, { "title": "25 years" }]
+         },
+         {
+            "fieldName": "Rate Hold Period",
+            "highlight": true,
+            "values": [
+               { "title": "120 days", "highlight": true },
+               { "title": "45 days", "highlight": true }
+            ]
+         },
+         {
+            "fieldName": "Required Down Payment",
+            "values": [
+               { "title": "97500", "is_currecy": true },
+               { "title": "97500", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Mortgage Insurance Fee",
+            "values": [
+               { "title": "15470", "is_currecy": true },
+               { "title": "15470", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Total Mortgage Amount",
+            "values": [
+               { "title": "567970", "is_currecy": true },
+               { "title": "567970", "is_currecy": true }
+            ]
+         }
+      ],
+      "subheading": ["Estimated Closing Costs:"],
+      "closing_cost": [
+         {
+            "fieldName": "Mortgage Insurance Tax",
+            "values": [
+               { "title": "1238", "is_currecy": true },
+               { "title": "1238", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Title Insurance Fee",
+            "values": [
+               { "title": "350", "is_currecy": true },
+               { "title": "350", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Appraisal Fee",
+            "values": [
+               { "title": "400", "is_currecy": true },
+               { "title": "400", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Legal Fee",
+            "values": [
+               { "title": "1200", "is_currecy": true },
+               { "title": "1200", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Land Transfer Tax Fee",
+            "values": [
+               { "title": "9475", "is_currecy": true },
+               { "title": "9475", "is_currecy": true }
+            ]
+         },
+         {
+            "fieldName": "Payment Frequency",
+            "highlight": true,
+            "values": [
+               {
+                  "title": "-Weekly (regular or accelerated) -Bi-weekly (regular or accelerated) -Semi-monthly -Monthly",
+                  "is_small_text": true
+               },
+               {
+                  "title": "-Weekly (regular or accelerated) -Bi-weekly (regular or accelerated) -Semi-monthly except on 29th, 30th or 31st -Monthly ",
+                  "is_small_text": true
+               }
+            ]
+         },
+         {
+            "fieldName": "Pre-Payment Privilege",
+            "highlight": true,
+            "values": [
+               {
+                  "title": "Up to 15% once in each 12-month period and/or increase regular payments by up to 15% once in each 12 month period.  Starting on the interest adjustment date or the anniversary of that date.",
+                  "is_small_text": true
+               },
+               {
+                  "title": "Radius Financial mortgages are closed however, when not in default of any terms, covenants, conditions or provisions contained in the mortgage, the borrower shall have the following privileges for payment of extra principal amounts:  <br/> The Borrower has the privilege of prepaying partial amounts of principal, without penalty, on any anniversary date. Such partial payments must each be in a minimum amount of $100.00 and total no more than ten percent (10%) of the original/renewed principal amount of this mortgage; The Borrower has the privilege of increasing the amount of the regular monthly payment amount up to a maximum of ten percent (10%) of the current principal and interest payment amount. This option is available once per mortgage year. These privileges are not cumulative and do not apply if the Borrower is prepaying more than 10% of the original principal amount of the mortgage, even if the Borrower has not used the privilege in the mortgage year in which the prepayment is made. ",
+                  "is_small_text": true
+               }
+            ]
+         },
+         {
+            "fieldName": "Pre-Payment Penalty",
+            "highlight": true,
+            "values": [
+               {
+                  "title": "Contract rate less current 2 year posted rate - see PDF or website https://www.equitablebank.ca/calculator",
+                  "is_small_text": true,
+                  "break_word": true
+               },
+               {
+                  "title": "The mortgage is closed for the term unless there is a bona fide arm’s length sale of the property. Upon sale, the Borrower can prepay this mortgage in full on payment of the GREATER of three (3) month’s simple interest on the principal amount owing on the prepayment date OR the interest rate differential (IRD), as is hereinafter defined. In this section IRD means the difference between the interest rate on the mortgage or renewal and the then current interest rate for a mortgage then offered by us for a term closest to the term remaining on the mortgage, as determined by us. The rate offered for the remaining term are calculated by referencing the chart below: <br/> SEE CHART IN GUIDELINES",
+                  "is_small_text": true
+               }
+            ]
+         },
+         {
+            "fieldName": "Portable",
+            "highlight": true,
+            "values": [
+               { "title": "Yes", "highlight": true },
+               { "title": "No", "highlight": true }
+            ]
+         },
+         {
+            "fieldName": "Special Conditions",
+            "highlight": true,
+            "values": [
+               { "title": "No", "highlight": true },
+               {
+                  "title": "Closed unless bona fide arms length sale. See Pre-Payment Penalty.",
+                  "highlight": true,
+                  "is_small_text": true
+               }
+            ]
+         }
+      ]
+   }
+}

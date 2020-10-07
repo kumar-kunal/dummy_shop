@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Source Sans Pro", sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body style="padding: 0; margin: 0">
+    <div style="width:751px; margin: 0 auto">
+        <table style="background: rgb(36, 101, 242); 
+    padding: 23px 24px 25px 52px; width: 100%">
+            <tr>
+                <td><img src="data:image/svg+xml;base64,{{logo}}" /></td>
+                <td style="text-align: right;">
+                    <p
+                        style="font-family: Poppins; font-size: 30px; color: white;letter-spacing: 0.56px;font-style: normal;     margin-left: auto; font-weight: bold;">
+                        COMPARISON REPORT
+                    </p>
+                </td>
+            </tr>
+        </table>
+        {{#with products}}
+        <div style="padding: 48px 77px 50px 59px;">
+            <table style="margin-bottom: 49px">
+                <tbody>
+                    <tr>
+                        <td style="width:269px;"></td>
+                        {{#each images}}
+                        <td
+                            style="margin-left: {{#if @index}} 6px {{else}} 5px {{/if}}; width:168px ;padding-bottom: 24px;">
+                            <img src="{{this}}" style="height:42px;width:42px;border-radius: 50%;" />
+                        </td>
+                        {{/each}}
+                    </tr>
+                    {{#each details}}
+                    <tr style="margin-bottom: 2px">
+                        <td>
+                            <p
+                                style="font-size: 16px; width:269px;  {{#if highlight}}color: rgb(32, 40, 89); font-weight:600; font-family: Poppins;{{else}} color: rgb(30, 30, 30); {{/if}}">
+                                {{fieldName}}
+                            </p>
+                        </td>
+                        {{#each values}}
+                        <td
+                            style="margin-left: {{#if @index}} 6px {{else}} 5px {{/if}}; width:168px; background: rgba(36, 101, 242, 0.1)">
+                            <p
+                                style="font-size: 16px;margin-left: 11px; padding-top:11px;padding-bottom: 8px; {{#if highlight}}color: rgb(32, 40, 89); font-weight:600; font-family: Poppins;{{else}} color: rgb(30, 30, 30); {{/if}}">
+                                {{#if this.is_currecy}}
+                                {{currency this.title}}
+                                {{else}}
+                                {{this.title}}
+                                {{/if}}
+                            </p>
+                        </td>
+                        {{/each}}
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <table>
+                {{#each subheading}}
+                <tr>
+                    <td
+                        style="font-size: 18px; font-weight:600; font-family: Poppins; color: rgb(32, 40, 89); padding-bottom: 50px;">
+                        {{this}}
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+            <table style="margin-bottom: 96px;">
+                <tbody>
+                    {{#each closing_cost}}
+                    <tr style="margin-bottom: 2px">
+                        <td>
+                            <p
+                                style="font-size: 16px; width:269px;  {{#if highlight}}color: rgb(32, 40, 89); font-weight:600; font-family: Poppins;{{else}} color: rgb(30, 30, 30); {{/if}}">
+                                {{fieldName}}
+                            </p>
+                        </td>
+                        {{#each values}}
+                        <td
+                            style="margin-left: {{#if @index}} 6px {{else}} 5px {{/if}}; min-width:168px; background: rgba(36, 101, 242, 0.1)">
+                            <p
+                                style="margin-left: 11px; padding-top:11px;padding-bottom: 8px; {{#if highlight}}color: rgb(32, 40, 89); font-weight:600; font-family: Poppins;{{else}} color: rgb(30, 30, 30); {{/if}} {{#if this.is_small_text}} font-size: 12px; font-weight: 600; padding-left: 6.5px; padding-right: 5px; margin-left: 0; {{else}} font-size: 16px; {{/if}} {{#if this.break_word}} word-break: break-all; {{/if}}">
+                                {{#if this.is_currecy}}
+                                {{currency this.title}}
+                                {{else}}
+                                {{this.title}}
+                                {{/if}}
+                            </p>
+                        </td>
+                        {{/each}}
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{/with}}
+        <table style="background: rgb(36, 101, 242); width: 100% ;padding: 44px 0">
+            <tr>
+                <td style="color: white; text-align: center; padding-bottom: 10px ;font-size: 14px">
+                    ©2020 Frank Mortgage All Rights are Reserved.
+                </td>
+            </tr>
+            <tr>
+                <td style="color: white; text-align: center; font-size: 14px">
+                    copyrights@frankmortgage.com
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
