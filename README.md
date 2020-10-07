@@ -1,4 +1,4 @@
-+> Change the DB cred in dev.env file before running
+=> Change the DB cred in dev.env file before running
 
 ::API doc link::
 
